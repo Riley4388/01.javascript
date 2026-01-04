@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景容器 -->
+    <div class="background"></div>
+
+    <!-- 視窗介面div寬800px -->
+    <div class="box">
+        <!-- 新增任務區域div -->
+        <div class="addList">
+            <!-- 標題:Add new list，置中 -->
+            <h1>My List</h1>
+            <!-- 文字輸入框，淺粉色實線邊框，寬500px -->
+            <input class="inputList" type="text" placeholder="">
+            <!-- Add Take按鈕新增任務到下方 -->
+            <button type="button" id="addTake" class="btn">Add Take</button>
+        </div>
+        <!-- 顯示已新增的任務區域div-->
+        <ul class="hasList">
+
+            <!-- 未完成 -->
+            <!-- <li>
+                工作
+                <button type="button" class="deletTake">Delet</button>
+            </li> -->
+
+            <!-- 已完成 -->
+            <!-- <li class="okList">
+                <del>工作</del>
+                <button type="button" class="deletTake">Delet</button>
+            </li> -->
+
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

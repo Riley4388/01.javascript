@@ -1,0 +1,141 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+
+ }
+
+ /* 背景花紋:白底+淺藍色細線格紋 */
+ .background {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     background-color: #f1f1f1;
+     opacity: 0.5;
+     background-image: linear-gradient(#94d2e6 0.8px, transparent 0.8px),
+         linear-gradient(90deg, #94d2e6 0.8px, transparent 0.8px),
+         linear-gradient(#94d2e6 0.4px, transparent 0.4px),
+         linear-gradient(90deg, #94d2e6 0.4px, #f1f1f1 0.4px);
+     background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+     background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+ }
+
+ /* 視窗介面置中，白底 */
+ .box {
+     position: absolute;
+     padding: 20px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 800px;
+     height: 600px;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }
+
+ .addList {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 2px;
+ }
+
+ /* 標題 */
+ h1 {
+     color: #525252;
+     margin-bottom: 2%;
+     font-family: emoji;
+     font-weight: bolder;
+ }
+
+ /* 輸入框 */
+ .inputList {
+     width: 100%;
+     height: 55px;
+     border: solid 3px #f0a3c1;
+     outline: none;
+     border-radius: 30px;
+     padding: 0 35px 0 35px;
+     margin-bottom: 2%;
+ }
+
+ .inputList:focus {
+     background-color: #f0f0f0;
+     transition: all 0.2s;
+ }
+
+ /* 按鈕 */
+ .btn {
+     width: 100px;
+     border-radius: 30px;
+     background-color: #f0a3c1;
+     border: none;
+     outline: none;
+     font-weight: bold;
+ }
+
+ .btn:focus {
+     box-shadow: none
+ }
+
+ .btn:hover {
+     background-color: #ff5a99;
+ }
+
+ /* 任務列表 */
+ ul {
+     list-style-type: none;
+     /* 移除小圓點等項目符號 */
+     margin: 0;
+     /* 移除 ul 預設的外部邊距 */
+     padding: 0;
+     /* 移除 ul 預設的內部填充（左側縮排） */
+ }
+
+ li {
+     color: #94d2e6;
+     font-weight: bold;
+     font-size: large;
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+     margin-bottom: 15px;
+     padding: 10px;
+     border-bottom: #dadada solid 1px;
+ }
+
+ .deletTake {
+     width: 56px;
+     height: 30px;
+     border-radius: 0px;
+     background-color: #94d2e6;
+     border: none;
+     font-size: 14px;
+     font-weight: bold;
+ }
+
+ .deletTake:hover {
+     background-color: rgb(255, 127, 127);
+     transition: all 0.2s;
+ }
+
+ /* 已完成 */
+ .okList p {
+    text-decoration: line-through;
+     color: #aaaaaa;
+ }
+
+ .okList .deletTake {
+     background-color: #e7e7e7;
+ }
+
+ .okList .deletTake:hover {
+     background-color: rgb(255, 127, 127);
+     transition: all 0.2s;
+ }
