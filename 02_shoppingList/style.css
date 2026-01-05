@@ -1,0 +1,114 @@
+/* --- Reset & 基本設定 --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* --- 輸入區 --- */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
+
+/* --- 商品清單 --- */
+.shoppingList {
+  list-style: none;
+}
+
+.shoppingList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background 0.2s;
+}
+
+.shoppingList li p {
+  flex: 1;
+  font-size: 16px;
+}
+
+.shoppingList li button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 刪除按鈕 */
+.shoppingList li .deleteBtn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.shoppingList li .deleteBtn:hover {
+  background-color: #d32f2f;
+}
+
+/* 完成按鈕 */
+.shoppingList li .doneBtn {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.shoppingList li .doneBtn:hover {
+  background-color: #1976d2;
+}
+
+/* 完成狀態 */
+.completed p {
+  text-decoration: line-through;
+  color: gray;
+}

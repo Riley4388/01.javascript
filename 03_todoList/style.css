@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.todo-wrapper {
+  background: #fff;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.todo-wrapper h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 6px 8px;
+}
+
+#addTodo {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* 清單 */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 未完成狀態 */
+.todo-list li p {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* 刪除按鈕（未完成） */
+.deleteBtn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* 完成狀態 */
+.todo-list li.completed p {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* 完成按鈕 */
+.doneBtn {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
